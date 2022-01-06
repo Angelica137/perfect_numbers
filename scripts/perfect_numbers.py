@@ -12,5 +12,7 @@ def aliquot_sum(n):
 
 
 def nics_cat(n):
-    if n < aliquot_sum(n):
+    if aliquot_sum(n) < n:
         return "Deficient"
+    if aliquot_sum(n) == n:
+        return "Perfect"
