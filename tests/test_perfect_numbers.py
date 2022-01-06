@@ -15,3 +15,7 @@ def test_nics_cat_15_deficient():
 
 def test_nics_cat_6_perfect():
     assert nics_cat(6) == "Perfect"
+
+
+def test_nics_cat_12_abundant():
+    assert nics_cat(12) == "Abundant"
