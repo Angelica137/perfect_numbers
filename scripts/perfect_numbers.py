@@ -5,3 +5,12 @@ def perfect_numbers(n):
             factors.append(i)
     aliquot_sum = sum(factors)
     return aliquot_sum
+
+
+def nics_cat(n):
+    if n < perfect_numbers(n):
+        return "Deficient"
+
+
+print(perfect_numbers(15))
+print(nics_cat(15))

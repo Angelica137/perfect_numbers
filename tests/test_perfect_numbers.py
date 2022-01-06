@@ -1,4 +1,8 @@
-from scripts.perfect_numbers import perfect_numbers
+from scripts.perfect_numbers import *
+
+
+def test_find_factrors_15():
+    assert find_factors(15) == [1, 3, 5]
 
 
 def test_perfect_numbers_15_returns_15sfactors():
