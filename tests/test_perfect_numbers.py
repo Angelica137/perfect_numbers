@@ -30,16 +30,3 @@ def test_nics_cat_24_abundant():
 def test_nics_cat_0_exception():
     with pytest.raises(ValueError, match=r"Classification is only possible for positive integers."):
         nics_cat(0)
-
-
-'''
-with self.assertRaises(ValueError) as err:
-    classify(0)
-self.assertEqual(type(err.exception), ValueError)
-self.assertEqual(
-    err.exception.args[0],
-
-
-def test_nics_cat_neg1_exception():
-    assert nics_cat(-1) == ValueError
-'''
