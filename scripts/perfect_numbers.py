@@ -20,7 +20,3 @@ def nics_cat(n):
         return "Perfect"
     if aliquot_sum(n) > n:
         return "Abundant"
-
-
-print(find_factors(15))
-print(find_factors(0))
