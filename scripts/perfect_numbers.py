@@ -13,7 +13,8 @@ def aliquot_sum(n):
 
 def nics_cat(n):
     if n <= 0:
-        return ValueError
+        raise ValueError(
+            "Classification is only possible for positive integers.")
     if aliquot_sum(n) < n:
         return "Deficient"
     if aliquot_sum(n) == n:
