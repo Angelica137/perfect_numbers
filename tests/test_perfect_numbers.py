@@ -30,3 +30,8 @@ def test_nics_cat_24_abundant():
 def test_nics_cat_0_exception():
     with pytest.raises(ValueError, match=r"Classification is only possible for positive integers."):
         nics_cat(0)
+
+
+def test_nics_cat_neg1_exception():
+    with pytest.raises(ValueError, match=r"Classification is only possible for positive integers."):
+        nics_cat(-1)
