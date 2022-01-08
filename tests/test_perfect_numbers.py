@@ -23,3 +23,7 @@ def test_nics_cat_12_abundant():
 
 def test_nics_cat_24_abundant():
     assert nics_cat(24) == "Abundant"
+
+
+def test_nics_cat_0_exception():
+    assert nics_cat(0) == ValueError
