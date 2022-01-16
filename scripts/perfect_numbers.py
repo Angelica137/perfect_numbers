@@ -3,16 +3,6 @@ def aliquot_sum(n):
     return sum(factors)
 
 
-'''
-def aliquot_sum(n):
-    sum_factors = 0
-    for i in range(1, n):
-        if n % i == 0:
-            sum_factors += i
-    return sum_factors
-'''
-
-
 def nics_cat(n):
     if n <= 0:
         raise ValueError(
@@ -24,6 +14,3 @@ def nics_cat(n):
         return "Perfect"
     if sum > n:
         return "Abundant"
-
-
-print(aliquot_sum(15))
