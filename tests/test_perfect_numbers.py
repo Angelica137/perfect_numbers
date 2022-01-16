@@ -4,7 +4,7 @@ import pytest
 
 
 def test_perfect_numbers_15_returns_15sfactors():
-    assert aliquot_sum(15) == 9
+    assert aliquot_number(15) == 9
 
 
 def test_nics_cat_6_perfect():
