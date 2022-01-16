@@ -2,9 +2,9 @@ def find_factors:
     instantiate empty int -> O(1)
     for each int in range 1 to n: -> O(n)
     check n's remainder is 0 -> O(1)
-    if it is add it to int -> O(1)
-    return the list -> O(1)
-TOTAL: O(1) + O(n) + O(1) + O(1) + O(1)
+    if it is add it to the list -> O(1)
+    return the sum of the elements in the list -> O(n)
+TOTAL: O(1) + O(n) + O(1) + O(1) + O(n)
 TOTAL: O(n)
 
 
