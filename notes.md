@@ -7,3 +7,8 @@ def find_factors:
 TOTAL: O(n) + O(n) + O(1) + O(1) + O(1)
 TOTAL: O(n)
 
+def aliquot_sum:
+    sum the elements in a list -> O(n)
+    return the sum -> O(1)
+
+
