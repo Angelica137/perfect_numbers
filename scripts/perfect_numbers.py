@@ -1,9 +1,16 @@
 def aliquot_sum(n):
+    factors = [i for i in range(1, n) if n % i == 0]
+    return sum(factors)
+
+
+'''
+def aliquot_sum(n):
     sum_factors = 0
     for i in range(1, n):
         if n % i == 0:
             sum_factors += i
     return sum_factors
+'''
 
 
 def nics_cat(n):
@@ -17,3 +24,6 @@ def nics_cat(n):
         return "Perfect"
     if sum > n:
         return "Abundant"
+
+
+print(aliquot_sum(15))
