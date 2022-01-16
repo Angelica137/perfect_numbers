@@ -1,14 +1,9 @@
-def find_factors(n):
-    factors = []
+def aliquot_sum(n):
+    sum_factors = 0
     for i in range(1, n):
         if n % i == 0:
-            factors.append(i)
-    return factors
-
-
-def aliquot_sum(n):
-    aliquot_sum = sum(find_factors(n))
-    return aliquot_sum
+            sum_factors += i
+    return sum_factors
 
 
 def nics_cat(n):
