@@ -10,9 +10,10 @@ def nics_cat(n):
     if n <= 0:
         raise ValueError(
             "Classification is only possible for positive integers.")
-    if aliquot_sum(n) < n:
+    sum = aliquot_sum(n)
+    if sum < n:
         return "Deficient"
-    if aliquot_sum(n) == n:
+    if sum == n:
         return "Perfect"
-    if aliquot_sum(n) > n:
+    if sum > n:
         return "Abundant"
