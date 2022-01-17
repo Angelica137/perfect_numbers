@@ -3,8 +3,5 @@ def nics_cat(n):
         raise ValueError(
             "Classification is only possible for positive integers.")
     factors = sum(i for i in range(1, n) if n % i == 0)
-    if factors < n:
-        return "Deficient"
-    if factors == n:
-        return "Perfect"
-    return "Abundant"
+    classify = "Deficient" if factors < n else "Perfect" if factors == n else "Abundant"
+    return classify
