@@ -7,5 +7,4 @@ def nics_cat(n):
         return "Deficient"
     if factors == n:
         return "Perfect"
-    if factors > n:
-        return "Abundant"
+    return "Abundant"
