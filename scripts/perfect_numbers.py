@@ -1,16 +1,11 @@
-def aliquot_number(n):
-    factors = sum(i for i in range(1, n) if n % i == 0)
-    return factors
-
-
 def nics_cat(n):
+    factors = sum(i for i in range(1, n) if n % i == 0)
     if n <= 0:
         raise ValueError(
             "Classification is only possible for positive integers.")
-    aliquot = aliquot_number(n)
-    if aliquot < n:
+    if factors < n:
         return "Deficient"
-    if aliquot == n:
+    if factors == n:
         return "Perfect"
-    if aliquot > n:
+    if factors > n:
         return "Abundant"
