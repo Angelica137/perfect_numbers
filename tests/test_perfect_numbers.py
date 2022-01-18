@@ -4,19 +4,19 @@ import pytest
 
 
 def test_nics_cat_6_perfect():
-    assert nics_cat(6) == "Perfect"
+    assert nics_cat(6) == "perfect"
 
 
 def test_nics_cat_28_perfect():
-    assert nics_cat(28) == "Perfect"
+    assert nics_cat(28) == "perfect"
 
 
 def test_nics_cat_12_abundant():
-    assert nics_cat(12) == "Abundant"
+    assert nics_cat(12) == "abundant"
 
 
 def test_nics_cat_24_abundant():
-    assert nics_cat(24) == "Abundant"
+    assert nics_cat(24) == "abundant"
 
 
 def test_nics_cat_0_exception():
